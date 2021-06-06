@@ -1,26 +1,27 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="font-bold text-2xl text-center pt-5 px-8">
+    To do list!
+    <!-- <button class="px-3 bg-gray text-indigo-500 rounded-full float-right hover:bg-gray-300 hover:text-indigo-700 focus:outline-none">
+      add task
+    </button> -->
+  </div>
+  <todo-list></todo-list>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import TodoList from './views/TodoList.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    TodoList
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+@import "https://fonts.googleapis.com/css?family=Mitr";
+h1,h2,h3,div{
+  font-family: "Mitr", sans-serif;
 }
 </style>
